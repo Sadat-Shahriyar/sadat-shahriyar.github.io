@@ -306,12 +306,22 @@
 
                         <div class="article-style">
                             <p>
-                                This research project, conducted at Samsung R&D Institute, focused on evaluating the effectiveness of large language models (LLMs) in executing test cases. Regular execution of test cases is crucial for assessing software stability. However, in an agile environment, the constantly evolving codebase complicates the automation of test cases using Selenium scripts. To address this challenge within the dynamic software development lifecycle (SDLC), we explored the potential of LLMs to comprehend test cases and execute them effectively.
+                                This research project, conducted at Samsung R&D Institute, focused on evaluating the <b>effectiveness of large language models (LLMs) in executing test cases</b>. We developed a framework that includes a robust approach for identifying the relevant UI elements needed to perform actions based on test cases using LLM, followed by interacting with these elements using Selenium. Subsequently, we applied semantic similarity-based textual matching between the final screen resulting from the UI interactions and the expected outcome defined in the test case to generate a verdict. My specific contributions involved simplifying web pages into a more generalized format for LLM comprehension, conducting few-shot prompting experiments with <b>LLMs (such as, Solar-10.7B, StableBeluga-13B, LLaMa-2-7B)</b>, preparing dataset, <b>fine-tuning the LLaMa-3-8B </b>model on annotated dataset for UI element identification and generating <b>semantic similarity-based verdicts using all-MiniLM-L6-v2</b> (Sentence Transformer model), given the final screen and expected result. Our approach successfully <b>executed 106 out of 110 targeted test cases</b>, achieving an accuracy of 97%.
                             </p>
-                            <p>
-                                We developed a framework that includes a robust approach for identifying the relevant UI elements needed to perform actions based on test cases using LLM, followed by interacting with these elements using Selenium. Subsequently, we applied semantic similarity-based textual matching between the final screen resulting from the UI interactions and the expected outcome defined in the test case to generate a verdict. My specific contributions involved simplifying web pages into a more generalized format for LLM comprehension, conducting few-shot prompting experiments with LLMs (such as, Solar-10.7B, StableBeluga-13B, LLaMa-2-7B), preparing dataset, fine-tuning the LLaMa-3-8B model on annotated dataset for UI element identification and generating semantic similarity-based verdicts using all-MiniLM-L6-v2 (Sentence Transformer model), given the final screen and expected result. Our approach successfully executed 106 out of 110 targeted test cases, achieving an accuracy of 97%.
-                            </p>
-                            
+
+                            <div style="text-align: left;">
+                                <span style="display: inline-block; margin: 2px; padding: 5px 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #f5f5f5; font-size: 12px;">LLM</span>
+                                <span style="display: inline-block; margin: 2px; padding: 5px 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #f5f5f5; font-size: 12px;">Generative AI</span>
+                                <span style="display: inline-block; margin: 2px; padding: 5px 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #f5f5f5; font-size: 12px;">Transformer</span>
+                                <span style="display: inline-block; margin: 2px; padding: 5px 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #f5f5f5; font-size: 12px;">LLaMa-3-8B</span>
+                                <span style="display: inline-block; margin: 2px; padding: 5px 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #f5f5f5; font-size: 12px;">all-MiniLM-L6-v2</span>
+                                <span style="display: inline-block; margin: 2px; padding: 5px 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #f5f5f5; font-size: 12px;">Prompt Engineering</span>
+                                <span style="display: inline-block; margin: 2px; padding: 5px 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #f5f5f5; font-size: 12px;">Few-shot prompting</span>
+                                <span style="display: inline-block; margin: 2px; padding: 5px 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #f5f5f5; font-size: 12px;">Data collection</span>
+                                <span style="display: inline-block; margin: 2px; padding: 5px 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #f5f5f5; font-size: 12px;">PEFT/QLoRa</span>
+                                <span style="display: inline-block; margin: 2px; padding: 5px 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #f5f5f5; font-size: 12px;">Unsloth</span>
+                            </div>
+
                         </div>
 
                     </div>
@@ -322,12 +332,25 @@
 
                         <div class="article-style">
                             <p>
-                                This research project, conducted at Samsung R&D Institute, investigates the efficacy of Large Language Models (LLMs), Vision-Language Models (VLMs), and Computer Vision Models in generating test cases from UI guides. Traditionally, testers manually follow UI guides, which detail the functional flows of an application, to write test cases that verify software functionality. In agile software development, each new requirement often introduces a new version of UI guide, requiring testers to repeatedly interpret the guide and design corresponding test cases. To address the challenge of reducing human effort and streamlining the creation of test cases in response to constantly evolving UI guides, we explored the potential of various LLMs, VLMs, and computer vision models for automating test case generation from UI guides.
-                            </p>
-                            <p>
-                                We developed a framework that employs a robust method for detecting functional flows within software from UI guides using Vision-Language Models (VLMs), Large Language Models (LLMs), and Computer Vision models, converting these functional flows into test cases through an algorithmic approach. Additionally, we generated expected outcomes for specific functional flows using VLMs. My contributions included conducting few-shot prompting experiments and fine-tuning VLMs (such as CogVLM and Idefics2) for UI screen identification and functional flow mapping. I also performed UI screen matching with their corresponding descriptions using the LLaMa-3-8B model. Our framework effectively generates test cases from extensive UI guides with minimal error and within a reasonable time frame.
+                                This research project, conducted at Samsung R&D Institute, investigates the <b>efficacy of Large Language Models (LLMs), Vision-Language Models (VLMs), and Computer Vision Models in generating test cases from UI guides</b>. We developed a framework that employs a robust method for detecting functional flows within software from UI guides using Vision-Language Models (VLMs), Large Language Models (LLMs), and Computer Vision models, converting these functional flows into test cases through an algorithmic approach. Additionally, we generated expected outcomes for specific functional flows using VLMs. My contributions included conducting <b>few-shot prompting experiments and fine-tuning VLMs (such as CogVLM and Idefics2)</b> for UI screen identification and functional flow mapping. I also performed UI screen matching with their corresponding descriptions using the <b>LLaMa-3-8B</b> model. Our framework effectively generates test cases from extensive UI guides with minimal error and within a reasonable time frame.
                             </p>
                             
+                        </div>
+
+                        <div style="text-align: left;">
+                            <span style="display: inline-block; margin: 2px; padding: 5px 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #f5f5f5; font-size: 12px;">LLM</span>
+                            <span style="display: inline-block; margin: 2px; padding: 5px 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #f5f5f5; font-size: 12px;">VLM</span>
+                            <span style="display: inline-block; margin: 2px; padding: 5px 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #f5f5f5; font-size: 12px;">Generative AI</span>
+                            <span style="display: inline-block; margin: 2px; padding: 5px 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #f5f5f5; font-size: 12px;">Transformer</span>
+                            <span style="display: inline-block; margin: 2px; padding: 5px 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #f5f5f5; font-size: 12px;">Computer Vision</span>
+                            <span style="display: inline-block; margin: 2px; padding: 5px 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #f5f5f5; font-size: 12px;">CogVLM</span>
+                            <span style="display: inline-block; margin: 2px; padding: 5px 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #f5f5f5; font-size: 12px;">Idefics2</span>
+                            <span style="display: inline-block; margin: 2px; padding: 5px 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #f5f5f5; font-size: 12px;">yoloV8</span>
+                            <span style="display: inline-block; margin: 2px; padding: 5px 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #f5f5f5; font-size: 12px;">LLaMa-3-8B</span>
+                            <span style="display: inline-block; margin: 2px; padding: 5px 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #f5f5f5; font-size: 12px;">Prompt Engineering</span>
+                            <span style="display: inline-block; margin: 2px; padding: 5px 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #f5f5f5; font-size: 12px;">Few-shot prompting</span>
+                            <span style="display: inline-block; margin: 2px; padding: 5px 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #f5f5f5; font-size: 12px;">Data collection</span>
+                            <span style="display: inline-block; margin: 2px; padding: 5px 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #f5f5f5; font-size: 12px;">PEFT/QLoRa</span>
                         </div>
 
                     </div>
@@ -339,30 +362,47 @@
 
                         <div class="article-style">
                             <p>
-                                This project is a collaboration between SRBD and BUET where we studied the effectiveness of Large Language models in generating and executing test cases for android applications under the supervision of  <a href="https://scholar.google.com/citations?user=jAuiNFgAAAAJ">Dr. Anindya Iqbal</a>. 
-                            </p>
-                            <p>
-                                We developed an automated UI testing tool for Android applications that can significantly reduce manual testing efforts by 80% by automatically generating test cases. The tool utilizes a custom DFS algorithm using Appium to traverse the application's UI and write test steps. Additionally, EfficientNet and MaxViT are employed for image classification of unknown screen elements, while the Flan-T5 generative model is used to understand screen representations and generate expected results for each test step.
+                                This project is a collaboration between SRBD and BUET where we studied the effectiveness of Large Language models in generating and executing test cases for android applications under the supervision of  <a href="https://scholar.google.com/citations?user=jAuiNFgAAAAJ">Dr. Anindya Iqbal</a>. We developed an automated UI testing tool for Android applications that can significantly reduce manual testing efforts by 80% by automatically generating test cases. The tool utilizes a <b>custom DFS algorithm</b> using Appium to traverse the application's UI and write test steps. Additionally,<b> EfficientNet and MaxViT are employed for image classification</b> of unknown screen elements, while the <b>Flan-T5 generative model</b> is used to understand screen representations and generate expected results for each test step.
                             </p>
                             
+                        </div>
+
+                        <div style="text-align: left;">
+                            <span style="display: inline-block; margin: 2px; padding: 5px 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #f5f5f5; font-size: 12px;">DFS</span>
+                            <span style="display: inline-block; margin: 2px; padding: 5px 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #f5f5f5; font-size: 12px;">Contrastive learning</span>
+                            <span style="display: inline-block; margin: 2px; padding: 5px 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #f5f5f5; font-size: 12px;">Transformer</span>
+                            <span style="display: inline-block; margin: 2px; padding: 5px 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #f5f5f5; font-size: 12px;">Computer Vision</span>
+                            <span style="display: inline-block; margin: 2px; padding: 5px 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #f5f5f5; font-size: 12px;">EfficientNet</span>
+                            <span style="display: inline-block; margin: 2px; padding: 5px 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #f5f5f5; font-size: 12px;">MaxViT</span>
+                            <span style="display: inline-block; margin: 2px; padding: 5px 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #f5f5f5; font-size: 12px;">Flan-T5</span>
+                            <span style="display: inline-block; margin: 2px; padding: 5px 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #f5f5f5; font-size: 12px;">Data collection</span>
+                            <span style="display: inline-block; margin: 2px; padding: 5px 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #f5f5f5; font-size: 12px;">Cosine similarity</span>
+                            <span style="display: inline-block; margin: 2px; padding: 5px 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #f5f5f5; font-size: 12px;">Appium</span>
                         </div>
 
                     </div>
 
                     <div class="card-simple">
                         <h3 class="article-title mb-1 mt-3">
-                            ML Based Android Malware Detection using System Call Sequence
+                           Android Malware Detection from System Call Sequence using Language Model
                         </h3>
 
                         <div class="article-style">
                             <p>
-                                Undergraduate thesis project was under the supervision of <a href="https://scholar.google.com/citations?user=jAuiNFgAAAAJ">Dr. Anindya Iqbal</a> and <a href="https://scholar.google.ca/citations?user=cXS5b4sAAAAJ&hl=en">Dr. Shahrear Iqbal</a> (Research Officer, National Research Council (NRC) Canada). 
-                            </p>
-                            <p>
-                                In this study, we developed a framework to effectively process sequence of system calls into a more digestable way for language models. Then we fine-tuned language models (BERT, RoBERTa, BigBird, LongFormer) with different sequence length of system calls and different methods (e.g. Supervised fine-tuning, Contrastive learning) and evaluated the performance with previously established LSTM, Random Forest, SVM
-                                etc models. Our performance evaluation showed a 6-7% increase in performance compared to the previous state-of-the art model.
+                                Undergraduate thesis project was under the supervision of <a href="https://scholar.google.com/citations?user=jAuiNFgAAAAJ">Dr. Anindya Iqbal</a> and <a href="https://scholar.google.ca/citations?user=cXS5b4sAAAAJ&hl=en">Dr. Shahrear Iqbal</a> (Research Officer, National Research Council (NRC) Canada). In this research, we created a framework to efficiently process sequences of system calls, making them more accessible for language models to identify malicious patterns and detect Android malware. <b>We utilized a Transformer models to analyze these sequences for malware detection</b>. We fine-tuned various language models <b>(BERT, RoBERTa, BigBird, LongFormer)</b> with different sequence lengths and techniques such as <b>supervised fine-tuning and contrastive learning</b>. We then compared their performance against existing models like LSTM, Random Forest, and SVM. Our evaluation demonstrated a <b>6-7% improvement</b> over the previous state-of-the-art model.
                             </p>
                             
+                        </div>
+
+                        <div style="text-align: left;">
+                            <span style="display: inline-block; margin: 2px; padding: 5px 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #f5f5f5; font-size: 12px;">Transformer</span>
+                            <span style="display: inline-block; margin: 2px; padding: 5px 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #f5f5f5; font-size: 12px;">Contrastive learning</span>
+                            <span style="display: inline-block; margin: 2px; padding: 5px 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #f5f5f5; font-size: 12px;">BERT</span>
+                            <span style="display: inline-block; margin: 2px; padding: 5px 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #f5f5f5; font-size: 12px;">RoBERTa</span>
+                            <span style="display: inline-block; margin: 2px; padding: 5px 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #f5f5f5; font-size: 12px;">BigBird</span>
+                            <span style="display: inline-block; margin: 2px; padding: 5px 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #f5f5f5; font-size: 12px;">LongFormer</span>
+                            <span style="display: inline-block; margin: 2px; padding: 5px 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #f5f5f5; font-size: 12px;">Data preprocessing</span>
+                            <span style="display: inline-block; margin: 2px; padding: 5px 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #f5f5f5; font-size: 12px;">Malware detection</span>
                         </div>
 
                     </div>
@@ -432,7 +472,7 @@
 
                                         <span class="middot-divider"></span>
                                         <p>
-                                            During the NLP BD Hack-a-thon, a project was developed to detect named entities in Bangla sentences using BanglaBERT, Support Vector Machine (SVM), and Conditional Random Fields (CRF). The dataset was augmented with techniques like word swapping, token replacement by label, synonym replacement, random insertion/deletion, stemming, lemmatization, and stopword removal. CRF was enhanced with features such as context words, word suffixes, named entity information, and digit features. The models achieved a macro average F1 score of 0.7938 with BanglaBERT, 0.68 with SVM, and 0.34 with CRF.<br>
+                                            During the Bangladesh National NLP Hackathon, we developed a project to detect named entities in Bangla sentences using BanglaBERT, Support Vector Machine (SVM), and Conditional Random Fields (CRF). The dataset was augmented with techniques like word swapping, token replacement by label, synonym replacement, random insertion/deletion, stemming, lemmatization, and stopword removal. CRF was enhanced with features such as context words, word suffixes, named entity information, and digit features. The models achieved a macro average F1 score of 0.7938 with BanglaBERT, 0.68 with SVM, and 0.34 with CRF.<br>
                                             <a href="https://github.com/Sadat-Shahriyar/Bangla-Named-Entity-Recognition">[Code]</a>
                                         </p>
                                     </div>
@@ -739,7 +779,7 @@
                             <i class="fa-li fa fa-trophy text-warning"></i> 9th position, Programming Contest, BUET CSE FEST (2019)
                         </li>
                         <li>
-                            <i class="fa-li fa fa-trophy text-warning"></i> Dean's award for academinc excelence, Faculty of Electrical and Electronic Engineering, BUET (2019-2021)
+                            <i class="fa-li fa fa-trophy text-warning"></i> Dean's award for academinc excellence, Faculty of Electrical and Electronic Engineering, BUET (2019-2021)
                         </li>
                     </ul>
                 </div>
@@ -861,7 +901,7 @@
                         </li>
                         <li>
                             <i class="fa-li fas fa-map-marker fa-2x " aria-hidden="true "></i>
-                            <span id="person-address ">Samsung R&D Institute, Monem Business District, Level 4, 111 Bir Uttam CR Dutta Rd, Dhaka-1205, Bangladesh</span>
+                            <span id="person-address ">Samsung R&D Institute, Monem Business District, Level 3, 111 Bir Uttam CR Dutta Rd, Dhaka-1205, Bangladesh</span>
                         </li>
                     </ul>
                     <div class="d-none">
