@@ -12229,6 +12229,18 @@ div.mermaid {
     object-fit: cover
 }
 
+/* .no-img-blur {
+    filter: blur(0);
+    -webkit-filter: blur(0);
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+} */
+
+#pro-pic {
+    transform: translateZ(0);
+    image-rendering: -webkit-optimize-contrast;
+}
+
 #profile {
     text-align: center;
     padding: 0px 10px 25px 10px;
