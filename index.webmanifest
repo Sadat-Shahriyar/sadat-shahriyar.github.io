@@ -5,11 +5,11 @@
     "theme_color": "#2962ff",
     "background_color": "#2962ff",
     "icons": [{
-        "src": "/img/sa",
+        "src": "/img/ss",
         "sizes": "192x192",
         "type": "image/png"
     }, {
-        "src": "/img/sa",
+        "src": "/img/ss",
         "sizes": "512x512",
         "type": "image/png"
     }],
